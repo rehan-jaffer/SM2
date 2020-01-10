@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "sm2/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "SM2"
+  spec.name          = "Sm2"
   spec.version       = Sm2::VERSION
   spec.authors       = ["Ray Jaffer"]
   spec.email         = ["ray@thelondonvandal.com"]
