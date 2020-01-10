@@ -8,13 +8,11 @@ module Sm2
   SIX_DAYS = 6
 
   def self.next_interval(repetitions, last_interval=0, e_factor=2.5)
-
     raise ArgumentError if repetitions <= 0
     return ONE_DAY if repetitions == 1
     return SIX_DAYS if repetitions == 2
    
-    last_interval * e_factor    
-
+    last_interval * e_factor
   end
 
   def self.new_e_factor(old_e_factor: 2.5, quality:)
